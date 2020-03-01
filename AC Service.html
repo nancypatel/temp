@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+        .pac-container {
+            background-color: #fff;
+            position: absolute!important;
+            z-index: 1000;
+            border-radius: 2px;
+            border-top: 1px solid #d9d9d9;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden
+        }
+        
+        .pac-logo:after {
+            content: "";
+            padding: 1px 1px 1px 0;
+            height: 18px;
+            box-sizing: border-box;
+            text-align: right;
+            display: block;
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 120px 14px
+        }
+        
+        .hdpi.pac-logo:after {
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)
+        }
+        
+        .pac-item {
+            cursor: default;
+            padding: 0 4px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 30px;
+            text-align: left;
+            border-top: 1px solid #e6e6e6;
+            font-size: 11px;
+            color: #999
+        }
+        
+        .pac-item:hover {
+            background-color: #fafafa
+        }
+        
+        .pac-item-selected,
+        .pac-item-selected:hover {
+            background-color: #ebf2fe
+        }
+        
+        .pac-matched {
+            font-weight: 700
+        }
+        
+        .pac-item-query {
+            font-size: 13px;
+            padding-right: 3px;
+            color: #000
+        }
+        
+        .pac-icon {
+            width: 15px;
+            height: 20px;
+            margin-right: 7px;
+            margin-top: 6px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+            background-size: 34px
+        }
+        
+        .hdpi .pac-icon {
+            background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
+        }
+        
+        .pac-icon-search {
+            background-position: -1px -1px
+        }
+        
+        .pac-item-selected .pac-icon-search {
+            background-position: -18px -1px
+        }
+        
+        .pac-icon-marker {
+            background-position: -1px -161px
+        }
+        
+        .pac-item-selected .pac-icon-marker {
+            background-position: -18px -161px
+        }
+        
+        .pac-placeholder {
+            color: gray
+        }
+    </style>
+    <title>AC Service</title>
+    <meta name="description" content="Window &amp; Split AC service, AC installation service, AC gas filling service, AC repair services offered by Lifeasy at most reasonable rate in Delhi, Noida, Gurgaon, Ghaziabad">
+    <meta name="keywords" content="ac service in Gurgaon, Noida, Ghaziabad, Delhi, split ac service, window ac service, ac repair, ac installation service, ac gas filling service in Delhi NCR, Lifeasy ">
+    <meta name="author" content="Lifeasy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="1062000739776-jtomhs85l9qfr95ajgtokjhkbgdt6p9l.apps.googleusercontent.com">
+    <link href="AC%20Service_files/landing.css" rel="stylesheet">
+
+    <link href="AC%20Service_files/style.css" rel="stylesheet">
+    <link href="AC%20Service_files/style_002.css" type="text/css" rel="stylesheet">
+    <link href="AC%20Service_files/float.css" rel="stylesheet">
+    <link href="AC%20Service_files/responsive.css" rel="stylesheet">
+    <link href="AC%20Service_files/normalize.css" rel="stylesheet">
+    <link href="AC%20Service_files/banner.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/animate.css">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/owl_002.css">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/owl.css">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/owl_003.css">
+
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/slick.css">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/Booking.css">
+    <link rel="stylesheet" href="AC%20Service_files/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="AC%20Service_files/custom-style.css">
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="AC%20Service_files/conversion_async.js"></script>
+    <script type="text/javascript" async="" src="AC%20Service_files/analytics.js"></script>
+    <script async="" src="AC%20Service_files/gtm.js"></script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K4BBNKV');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script src="AC%20Service_files/jquery-1.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="AC%20Service_files/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="AC%20Service_files/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="AC%20Service_files/controls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="AC%20Service_files/places_impl.js"></script>
+    <script src="AC%20Service_files/a"></script>
+    <script type="text/javascript" src="AC%20Service_files/int.js"></script>
+    <script type="text/javascript" src="AC%20Service_files/api.txt"></script>
+    <script type="text/javascript" src="AC%20Service_files/21c1e810f7f98f00b3_002.js"></script>
+</head>
+
+<body style="" class="">
+    <form method="post" action="./ServiceBooking.aspx?msid=RA7azl9wfHE%3d" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="7fJmyqUpeItwKQa+xuV415P4OhGeFWcjWZPtNp8BY+wafnOKU6Yavs/Qj+6g4zGG9QmVpMLcGWMnfTp9tWYTK5cHrgW2a/vQ9q6iTLcxQpncWB31gnJDLwNyruyLj9AQ0hnJ+wFywAPlSFJtRbp+N7iZy2eTNIRHN1QOT/tMgWJB7OZp0sBD+dj/4feRQ/YNzfS9kSghYbb38Xw+t6K68NX9HS39sM0uNoMkrw7u1puMhM0xzhnGmmFJpn17wpezKMDJ9P1DleJQqmn8YKoihp5fMxlCRvG6pxLhwPaizDkqLpfVX3Sy8hBe6Dc/9LswkKqJqn8J/IxlpW6liGY812aqzYxGLHeYS4HhY+5T+K2weDV3yBcVzkk7x03IZaI2/x0GgAM3qVNVPL2Yw8ARIMvtsmohICJfJK1OZo/kQTMjQAdutAXbOLxwJ6pwpwTSTcYCxdhwyqz9Cw5eo3vmJ93O6N8pMmWgG159Ad7BOGWtdvG9Y7Qldh7yFM9cSFiLcRoxNpd214C2/EDnIj3p6RGb8swzLVgbddxS/yRPVuMQr9kp4IZ38BLRk6SY50f0vBNUeqRfGgp30xvo/K3ITupIDOj93akEu6cBOEsgl/JihT+8ElLQRkoOBtnjIwfOPC+9SsMdiS2OgdCHYPpUFsFkOHPYkdGCtVae12gtlAPt+brG3QJfEbKRp2G0rNiKEK2NaU0C22E10KLlchSPiq2KLGLx1DsipQcqzhxkjcc1sNe/0jNhVCuWz9Us1DQZPWFRaILPZZHxpzDm+vJGNm/odQHHtteGf7clGjmLpfjHbHi+xx7ACou8CYWTe72mZs7ceEYkFA9Dn+ag9pryK89lJI7Eql6tm7ICemzT0D1AmBfN+UZB4RhbONcMZBatDN+/RLkeDGX+9k/6HhU6TSGq3hSjIcHeS6VfP/53C6UhOynPUK120HzGB0q+sVHVivXlhnOHg6DhCOCqw1IGN/89doHVPiar7YVeiGOlnsInRiixAiCxjoU9TkT1S7Pq8op6S4hX5E9L/XwFGsrj2MXgGGTa0Qw7WypEwITPdXmnAJcYcE0TZ3tweslvSnX5FqyE5OoB7Ds4KIEb7fjdi+9V/OV1zlL+BkJYIamkjrFc/r9vJxpQfypuH2mnYu/khF1uohcipj+YjpHqouK4Clnb4RmyNssHF+URsG42e6XcQhWpV3FWnDDG3ws/RcLPoyXg+pFwgsZu6Zc4jemnuFMMng92mFyt6lhNFY/ROHV8uKfeAmslXoejiE0ShTA046hvf1kX97Gm8sst/CMU7d18NVua9NOHdmKCYzGpN97O4PgxNAGU7ci8dQMOCzQrH/Gf/V20a69eRmxXS8tKNSasK7Q81C43cw2Lpf7HzzSW4gjU9zBmOs0Wbhl7ZFBepBH96QXAIPqZfMviH1mHT3nF6W7gvLLyyLDBRA9mrXFpLZIvyDkdmW5p1Pr6tFUD5rWbQqheuGhV5t59l4s2OF5F+wkFo2BjQXlm0YHOJd+/Pv3Z2/AhFcIZ7cQ/7CdDiPSmBXMRBM4DTr+Vbb1Adw/Plm/8xt8ykP9Bn81hfb4vXMfc+eBEQ4dUMk+W+FGKDrnXLK/QE2wMvw+AH0+4s1FG5YxdvoldeL67A9ndcalIdgK/BPRwH4Rp9hInM8GFrZzJQvMQFVgwqlEn1M4H/ZFEePZivRpduh7e1JkOqgK1V5R5nYxc08+RhiqArrIXBGLBU4GSa9xjglLUNSaDN8Es/H0ckMFFP+gnIYfUOhR299dS54HTaGqCBKEdqwmXdi5xGAwQzJxAsrhYtWwQ0DQpEPC60eKit4MxYTkHbiEnEWwBBCatuenx8F3RixWui3V5Jc/lGslR9e95Gcycsn88vwufmrUALU9EOJ0BxY0Vuxa1pHqsbMnyXkbYDfCZcxLXBKKrFPEMxaPhMFsUDKmbnzUXGG9XvNBJc86lSV5EKqGX3nlLpGmUE+J+POag58jqTpP7soZdyfBTvF5Hq9bv6mWkaVhxXtQMYQiwP6J1v9fVcYlGoy282d5nS9IWd97Ch9ZjI/giU0W4tITN93t+T70wn5Rhg+JECuKk+3sLP5sIkyyWCHQyx8ZXb4Ew6ThU5XIxMuYlhe6MUDTCBrOYqTkCghfSTQ9RgpRlN8/jEkEPpI7ZQKXgmz1l9bOA5RWHTQutjTwpuYvppEzJAP2bB0yHbQUZR1OHWYByE9tYrh+mVUttZzi9BwadMTbzMaXMctdj8fyDlptCRZI9tEYLYunu0/mO6raZF+W/0Yqpf4uIsgNm1O3VoCI62qtQI4L4iBX4QxCMgFLUe2T2ZgbAHhaDMxZGZpX4R4Kz0gLG7qz3zXvrVlZznIaAABspuaDorrXfJVr+PD6++nisI3ybi+4qkOm35Akzf5G+eGq3KL2KOX372m8A8+FtaaVL9G7ECYAPJ5i/VE4Sv/3n8pCzZgPv3SaY3CUktEPxzRJA4nrj5h5UUjYDFPEBysrmHNefwv2JUg4tRaX4U4UgkXyHt5T4sh3a5qC5DVM3meYo6NfW5bQ/iwruPJRo9WN88/Pewvt5vW5H0iU3951JDaOMzbTZQj5EdNYgMxqKTl54jbQU71BKlurMk7DP4gY+JkH5ULAQoyV2vvLNL8bMjg==">
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="44B8B5D3">
+        </div>
+        <!-- Start Header Section -->
+
+        <script src="AC%20Service_files/jquery-1.js"></script>
+        <script async="" type="text/javascript">
+            var jq = jQuery.noConflict();
+            jq(window).bind("load", function() {
+
+                //jq(document).ready(function () {
+                jq('.signin').click(() => {
+
+                });
+                //  localStorage.removeItem("lastsessionID1");
+                var valuid = "";
+                var historyTmp1;
+                var historyTmp_get1;
+                if (localStorage.getItem("lastsessionID1") === undefined || localStorage.getItem("lastsessionID1") == null || localStorage.getItem("lastsessionID1") == '' || localStorage.getItem("lastsessionID1") == 'undefined') {
+                    historyTmp1 = document.getElementById('hdnSessionId').value;
+                    localStorage.setItem("lastsessionID1", historyTmp1);
+                    historyTmp_get1 = localStorage.getItem("lastsessionID1");
+                    document.getElementById("txt_lclstrg1").value = historyTmp_get1;
+                } else {
+                    historyTmp_get1 = localStorage.getItem("lastsessionID1");
+                    document.getElementById("txt_lclstrg1").value = historyTmp_get1;
+                }
+
+                valuid = document.getElementById("usidaft").value;
+                var newval = "";
+                if (valuid != "") {
+                    newval = valuid;
+                } else {
+                    newval = historyTmp_get1;
+                }
+                //  alert(newval);
+                //var path = "../Handler/getcartcount.ashx?sesstionid=" + newval;
+                var path = '../default.aspx/getcartcount';
+                var obj = {
+                    'sesstionid': newval
+                };
+
+                jq.ajax({
+                    url: path,
+                    type: 'post',
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'JSON',
+                    data: JSON.stringify(obj),
+                    success: function(data) {
+                        data = data.d;
+                        jq("#crt").text(data);
+
+                    },
+                    error: function(data) {}
+                });
+                //if (jq('#bottom-proceed').is(':visible') == true)
+                var url = window.location.pathname;
+                if (url.indexOf("checkout.aspx") < 0) {
+                    if (window.matchMedia("only screen and (max-width: 760px)").matches) {
+                        getCartDetail(newval, valuid)
+                    }
+                }
+            });
+
+            jq(document).on('show.bs.modal', '.modal', function() {
+                jq("#bottom-proceed").addClass("bottom-hide");
+            });
+            jq(document).on('hide.bs.modal', '.modal', function() {
+                if (jq("#txtCartAmount").text() != "")
+                    jq("#bottom-proceed").removeClass("bottom-hide");
+            });
+
+            function getCartDetail(sessid, custid) {
+                //var path = "../Handler/getcartdetail.ashx?sessid=" + sessid + "&custid=" + custid;
+                var path = '../default.aspx/getCartDetail';
+                var obj = {
+                    'sessid': sessid,
+                    'custid': custid
+                };
+                var jq = jQuery.noConflict();
+                jq.ajax({
+                    url: path,
+                    type: "post",
+                    contentType: 'application/json;charset=utf-8',
+                    dataType: 'JSON',
+                    data: JSON.stringify(obj),
+                    success: function(data) {
+                        if (data != null && data != "" && JSON.parse(data.d).length > 0) {
+                            var result = JSON.parse(data.d);
+                            jq("#txtTotServiceCnt").text(result[0].cnt);
+                            jq("#txtCartAmount").text(result[0].distotamt.toString());
+                            jq("#bottom-proceed").removeClass("bottom-hide");
+                        } else {
+                            jq("#bottom-proceed").addClass("bottom-hide");
+                        }
+                    },
+                    error: function(data) {}
+                });
+            }
+
+            //function getCartDetail(sessid, custid) {
+            //    var path = "../Handler/getcartdetail.ashx?sessid=" + sessid + "&custid=" + custid;
+            //    jq.ajax({
+            //        url: path,
+            //        type: "GET",
+            //        crossDomain: true,
+            //        success: function (data) {
+            //            if (data != null && data != "" && JSON.parse(data).length > 0) {
+            //                var result = JSON.parse(data);
+            //                jq("#txtTotServiceCnt").text(result[0].cnt);
+            //                jq("#txtCartAmount").text(result[0].distotamt.toString());
+            //                jq("#bottom-proceed").removeClass("bottom-hide");
+            //            }
+            //            else {
+            //                jq("#bottom-proceed").addClass("bottom-hide");
+            //            }
+            //        },
+            //        error: function (data) { }
+            //    });
+            //}
+
+            jq(function() {
+                jq('#mbl_bar').click(function() {
+
+                    //var sd = jq('#ul_mbl_bar').is(':visible');
+                    //alert(sd);
+                    if (jq('#ul_mbl_bar').is(':visible') == true) {
+                        jq('#ul_mbl_bar').hide();
+                    } else {
+                        jq('#ul_mbl_bar').show();
+                    }
+
+                });
+            });
+
+            function redirecttohardware() {
+                var $ = jQuery.noConflict();
+                var uid = $("#Header1_hdn_uid").val();
+                var ur = $("#Header1_hdnredirectur").val();
+
+                if (uid == "") {
+                    //window.location.href = ur;
+                    window.open(ur, '_blank');
+                } else {
+                    // window.location.href = ur + "LoginfromLifeasy.aspx?sUtAtS=nIgOl&id=" + uid;
+                    window.open(ur + "LoginfromLifeasy.aspx?sUtAtS=nIgOl&id=" + uid, '_blank');
+                }
+
+            }
+
+            function CartProceed() {
+                var custid = document.getElementById("usidaft").value;
+                var sessid = localStorage.getItem("lastsessionID1");
+                var url = window.location.pathname;
+                if (url.indexOf('ServiceBooking') != -1) {
+                    onclickbtnprocced();
+                } else {
+                    if (custid != null && custid != '') {
+                        window.location = "checkout.aspx";
+                    } else if (sessid != null && sessid != '') {
+                        window.location = "login.aspx";
+                    }
+                }
+            }
+        </script>
+
+        <header id="header">
+
+            <nav class="main-navigation navbar-fixed-top affix-top" role="navigation" data-spy="affix" data-offset-top="100">
+
+                <div class="container">
+                    <div class="navbar-header col-md-2 col-sm-2">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars fa-lg"></i></button>
+
+                        <a href="https://www.lifeasy.in/" class="navbar-brand">
+
+                            <picture>
+                                <source media="(max-width: 360px)" srcset="https://cdn.lifeasy.in/Fileupload/logo/lifeasy_logo-2.png" style="width:80px;height:43px;">
+                                <source media="(max-width: 768px)" srcset="https://cdn.lifeasy.in/Fileupload/logo/lifeasy_logo-1.png" style="width:145px;height:61px;">
+                                <source media="(max-width: 1024px)" srcset="https://cdn.lifeasy.in/Fileupload/logo/lifeasy_logo.png" style="width:145px;height:61px;">
+                                <img src="AC%20Service_files/lifeasy_logo.png" alt="lifeasy" style="width:145px;">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <div class="top-bar col-md-10 col-sm-10">
+                        <div class="">
+                            <div class="row" style="padding-bottom: 0;">
+                                <div class="contact">
+                                    <ul>
+                                        <li class="email-id"><a href="https://www.lifeasy.in/#offer"><span class="fa fa-tag"></span>OFFER</a></li>
+
+                                        <li class="contactno"><a href="https://www.lifeasy.in/#packages"><span class="fa fa-money"></span>Package</a></li>
+                                        <li class="contactno"><a href="tel:8586882266"><span class="fa fa-phone"></span>8586882266</a></li>
+
+                                        <li class="contactno"><a href="https://www.lifeasy.in/#download"><span class="fa fa-mobile"></span>download app</a></li>
+                                        <li class="contactno"><a href="https://www.lifeasy.in/egifting.aspx"><span class="fa fa-gift"></span>Gifting</a></li>
+                                        <li class="contactno"><a href="https://www.lifeasy.in/feedback.aspx"><span class="fa fa-pencil-square-o"></span>feedback</a></li>
+
+                                        <li class="contactno cart-header">
+                                            <a style="float: left;" href="https://www.lifeasy.in/shoppingcart.aspx"><span class="fa fa-shopping-cart"></span>cart</a>
+                                            <a href="https://www.lifeasy.in/shoppingcart.aspx" style="color: #e50d5f;" class="cart_count">(<span id="crt">0</span>)</a>
+                                        </li>
+
+                                        <li class="pink signin"><a href="https://www.lifeasy.in/login.aspx">Sign In</a></li>
+
+                                        <li class="mbl_link">
+                                            <ul>
+                                                <li class="link2">
+                                                    <a class="removelink" id="mbl_bar" style="border-right: 0;">
+                                                        <img src="AC%20Service_files/bars.png"></a>
+                                                    <ul id="ul_mbl_bar">
+                                                        <li><a href="https://www.lifeasy.in/">OFFER</a></li>
+                                                        <li><a href="https://www.lifeasy.in/">Package</a></li>
+                                                        <li><a href="https://www.lifeasy.in/">download app</a></li>
+                                                        <li><a href="https://www.lifeasy.in/egifting.aspx">Gifting</a></li>
+                                                        <li><a href="https://www.lifeasy.in/feedback.aspx">feedback</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="bottom-proceed" class="visible-xs row bottom-hide" style="background-color: rgb(0, 0, 0); padding: 10px; width: 101%; position: fixed; bottom: 0px; left: 10px; cursor: pointer; z-index: 999999999;">
+            <div class="col-xs-2"><i aria-hidden="true" class="fa fa-shopping-cart fa-2x" style="color: rgb(255, 255, 255);"></i></div>
+            <div class="col-xs-6" style="padding-right: 0px; color: rgb(255, 255, 255);">
+                <div style="font-size: 13px;">
+                    Services Added: <span class="service_no" id="txtTotServiceCnt"></span>
+                    <br>
+                    <i class="fa fa-inr" aria-hidden="true"></i><span id="txtCartAmount"></span>
+                    <!---->
+                </div>
+            </div>
+            <div class="col-xs-4" style="padding: 8px 0px;"><a id="btnCartProceed" class="custom-btn proceed-btn" onclick="return CartProceed();" style="font-size: 14px; border-radius: 4px; vertical-align: middle;">Proceed</a></div>
+
+        </div>
+        <style>
+            .bottom-hide {
+                display: none !important;
+            }
+        </style>
+        <input type="hidden" id="txt_lclstrg1" name="txt_lclstrg1" style="display: none;" value="xbq44wp505wcjxtidw4obqlo646">
+        <input type="hidden" name="Header1$hdn_uid" id="Header1_hdn_uid">
+        <input type="hidden" name="Header1$hdnredirectur" id="Header1_hdnredirectur" value="https://product.lifeasy.in">
+        <input type="hidden" id="hdnSessionId" name="hdnSessionId" value="xbq44wp505wcjxtidw4obqlo245" style="display: none;">
+        <input type="hidden" id="usidaft" name="usidaft" value="" style="display: none;">
+
+        <div id="lodr" style="display: none!important; color: #ed2d72;" class="lodr">
+            <img src="AC%20Service_files/loder.gif">
+            <br> Please wait...
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div id="serviceheading">AC Service</div>
+                    <div class="well123" style="margin-top: 12px;">
+                        <!-- FOR SUB SERVICE TABS -->
+                        <div id="divServiceSlider" style="background-color: white !important;">
+                            <section class="regular1 slider1 slick-initialized slick-slider">
+                                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+                                <div class="slick-list draggable">
+                                    <div class="slick-track" style="opacity: 1; width: 4488px; transform: translate3d(-1870px, 0px, 0px);">
+                                        <div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30469",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Spare Parts</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30468",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC AMC</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30166",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Cooling Coil</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30169",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Compressor</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30143" onclick='bindsubservicedata("30143",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>Normal Inspection/Visiting Charge</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30465" onclick='bindsubservicedata("30465",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Servicing</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30488" onclick='bindsubservicedata("30488",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>Minor Repair</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30466" onclick='bindsubservicedata("30466",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Installation/Removal</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30467" onclick='bindsubservicedata("30467",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>Complete Gas Charging</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30152" onclick='bindsubservicedata("30152",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>PCB Repair</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-current slick-active" data-slick-index="6" aria-hidden="false" style="width: 187px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1 AC_SerVice2">
+                                                        <a href="javascript:void(0);" id="30469" onclick='bindsubservicedata("30469",this)' class="thumbnail123" tabindex="0">
+                                                            <p>AC Spare Parts</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false" style="width: 187px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30468" onclick='bindsubservicedata("30468",this)' class="thumbnail123" tabindex="0">
+                                                            <p>AC AMC</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="8" aria-hidden="false" style="width: 187px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30166" onclick='bindsubservicedata("30166",this)' class="thumbnail123" tabindex="0">
+                                                            <p>AC Cooling Coil</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="9" aria-hidden="false" style="width: 187px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="30169" onclick='bindsubservicedata("30169",this)' class="thumbnail123" tabindex="0">
+                                                            <p>AC Compressor</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30143",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>Normal Inspection/Visiting Charge</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30465",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Servicing</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30488",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>Minor Repair</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30466",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Installation/Removal</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30467",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>Complete Gas Charging</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30152",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>PCB Repair</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30469",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Spare Parts</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30468",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC AMC</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30166",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Cooling Coil</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" style="width: 187px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <div class="AC_SerVice1">
+                                                        <a href="javascript:void(0);" id="" onclick='bindsubservicedata("30169",this)' class="thumbnail123" tabindex="-1">
+                                                            <p>AC Compressor</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+                            </section>
+                        </div>
+
+                        <!-- FOR INCULSION -->
+                        <div class="Requirement_Left">
+                            <div class="Total_Ser_Vice" id="style-4">
+                                <h4>SELECT THE SERVICE THAT MATCHES YOUR REQUIREMENT BEST</h4>
+                                <div id="divInclusionList">
+                                    <div class="SelectSerVice">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="Dot_10"><i class="fa fa-dot-circle-o fa_custom"></i>AC Capacitor 50-60 mfd</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-6 RangePlus"><span><a href="javascript:void(0);" id="rem31562" onclick='removeitem(0,31562,"")'><i class="fa fa-minus" aria-hidden="true" id="txtadd0"></i></a> &nbsp;<i class="txtunit31562" id="txtunit0"> 1</i> Units &nbsp;<a href="javascript:void(0);" id="add31562" onclick='additem(0,20,31562,"")'><i class="fa fa-plus" aria-hidden="true" id="txtremove0"></i></a></span></div>
+                                                    <div class="col-md-2 col-xs-3 " id="divDiscount10"></div>
+                                                    <div class="col-md-3 col-xs-3 " id="divDiscount20"><span><i class="fa fa-inr" aria-hidden="true"></i><i id="txtServiceAmt0">750</i></span></div>
+                                                    <div class="col-md-3 col-xs-12" id="divDiscount30"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="StandIns_Tallation">This includes service charges for changing AC Capacitor. Cost of AC Capacitor is included in this.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn add-btn" id="btnAddService0" onclick="GetServiceDateTime(0)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="SelectSerVice">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="Dot_10"><i class="fa fa-dot-circle-o fa_custom"></i>AC Fan motor outdoor (Split)</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-6 RangePlus"><span><a href="javascript:void(0);" id="rem31569" onclick='removeitem(1,31569,"")'><i class="fa fa-minus" aria-hidden="true" id="txtadd1"></i></a> &nbsp;<i class="txtunit31569" id="txtunit1"> 1</i> Units &nbsp;<a href="javascript:void(0);" id="add31569" onclick='additem(1,20,31569,"")'><i class="fa fa-plus" aria-hidden="true" id="txtremove1"></i></a></span></div>
+                                                    <div class="col-md-2 col-xs-3 " id="divDiscount11"></div>
+                                                    <div class="col-md-3 col-xs-3 " id="divDiscount21"><span><i class="fa fa-inr" aria-hidden="true"></i><i id="txtServiceAmt1">2999</i></span></div>
+                                                    <div class="col-md-3 col-xs-12" id="divDiscount31"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="StandIns_Tallation">This includes service charges for changing AC Fan Motor. Cost of AC Fan Motor included in this.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn add-btn" id="btnAddService1" onclick="GetServiceDateTime(1)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="SelectSerVice">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="Dot_10"><i class="fa fa-dot-circle-o fa_custom"></i>AC Fan motor Indoor (Split)</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-6 RangePlus"><span><a href="javascript:void(0);" id="rem31570" onclick='removeitem(2,31570,"")'><i class="fa fa-minus" aria-hidden="true" id="txtadd2"></i></a> &nbsp;<i class="txtunit31570" id="txtunit2"> 1</i> Units &nbsp;<a href="javascript:void(0);" id="add31570" onclick='additem(2,20,31570,"")'><i class="fa fa-plus" aria-hidden="true" id="txtremove2"></i></a></span></div>
+                                                    <div class="col-md-2 col-xs-3 " id="divDiscount12"></div>
+                                                    <div class="col-md-3 col-xs-3 " id="divDiscount22"><span><i class="fa fa-inr" aria-hidden="true"></i><i id="txtServiceAmt2">1750</i></span></div>
+                                                    <div class="col-md-3 col-xs-12" id="divDiscount32"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="StandIns_Tallation">This includes service charges for changing AC Fan Motor. Cost of AC Fan Motor included in this.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn add-btn" id="btnAddService2" onclick="GetServiceDateTime(2)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="SelectSerVice">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="Dot_10"><i class="fa fa-dot-circle-o fa_custom"></i>AC Fan motor Window (Non DC)</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-6 RangePlus"><span><a href="javascript:void(0);" id="rem31571" onclick='removeitem(3,31571,"")'><i class="fa fa-minus" aria-hidden="true" id="txtadd3"></i></a> &nbsp;<i class="txtunit31571" id="txtunit3"> 1</i> Units &nbsp;<a href="javascript:void(0);" id="add31571" onclick='additem(3,20,31571,"")'><i class="fa fa-plus" aria-hidden="true" id="txtremove3"></i></a></span></div>
+                                                    <div class="col-md-2 col-xs-3 " id="divDiscount13"></div>
+                                                    <div class="col-md-3 col-xs-3 " id="divDiscount23"><span><i class="fa fa-inr" aria-hidden="true"></i><i id="txtServiceAmt3">3000</i></span></div>
+                                                    <div class="col-md-3 col-xs-12" id="divDiscount33"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="StandIns_Tallation">This includes service charges for changing AC Fan Motor. Cost of AC Fan Motor included in this.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn add-btn" id="btnAddService3" onclick="GetServiceDateTime(3)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="SelectSerVice">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="Dot_10"><i class="fa fa-dot-circle-o fa_custom"></i>Contactor (split AC)</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-6 RangePlus"><span><a href="javascript:void(0);" id="rem31577" onclick='removeitem(4,31577,"")'><i class="fa fa-minus" aria-hidden="true" id="txtadd4"></i></a> &nbsp;<i class="txtunit31577" id="txtunit4"> 1</i> Units &nbsp;<a href="javascript:void(0);" id="add31577" onclick='additem(4,20,31577,"")'><i class="fa fa-plus" aria-hidden="true" id="txtremove4"></i></a></span></div>
+                                                    <div class="col-md-2 col-xs-3 " id="divDiscount14"></div>
+                                                    <div class="col-md-3 col-xs-3 " id="divDiscount24"><span><i class="fa fa-inr" aria-hidden="true"></i><i id="txtServiceAmt4">750</i></span></div>
+                                                    <div class="col-md-3 col-xs-12" id="divDiscount34"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="StandIns_Tallation"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn add-btn" id="btnAddService4" onclick="GetServiceDateTime(4)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="SelectSerVice">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <p class="Dot_10"><i class="fa fa-dot-circle-o fa_custom"></i>Out Door Fan</p>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-xs-6 RangePlus"><span><a href="javascript:void(0);" id="rem31579" onclick='removeitem(5,31579,"")'><i class="fa fa-minus" aria-hidden="true" id="txtadd5"></i></a> &nbsp;<i class="txtunit31579" id="txtunit5"> 1</i> Units &nbsp;<a href="javascript:void(0);" id="add31579" onclick='additem(5,20,31579,"")'><i class="fa fa-plus" aria-hidden="true" id="txtremove5"></i></a></span></div>
+                                                    <div class="col-md-2 col-xs-3 " id="divDiscount15"></div>
+                                                    <div class="col-md-3 col-xs-3 " id="divDiscount25"><span><i class="fa fa-inr" aria-hidden="true"></i><i id="txtServiceAmt5">1200</i></span></div>
+                                                    <div class="col-md-3 col-xs-12" id="divDiscount35"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="StandIns_Tallation"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn add-btn" id="btnAddService5" onclick="GetServiceDateTime(5)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FOR DATE AND TIME -->
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 Boo_Ki_ng" style="padding: 0px; display: none;" id="divCart">
+                    <h4>Booking Summary</h4>
+                    <div class="BooKingSummary">
+                        <div id="divAddedService"></div>
+
+                        <div class="row">
+                            <div class="col-md-12 ReMoVe">
+                                <input name="txtcouponcode" type="text" id="txtcouponcode" form-control="WELCOME" class="form-control" style="text-transform: uppercase !important; font-size: 10px;" placeholder="Have a discount / promo code to redeem ?">
+                                <button type="button" class="btn" style="background: rgb(243, 122, 70) none repeat scroll 0% 0% !important; display: none;" id="btnRemovecoupon" onclick="remove_couponcode();">Remove</button>
+                                <input type="button" id="btncouponapply" name="btncouponapply" value="Apply" class="btn" onclick="callcouponcode()">
+                                <p style="color: green; display: none;" id="divCouponApplied">Discount code applied succesfully.</p>
+                            </div>
+                        </div>
+                        <div id="divCartSummary"></div>
+                        <div class="row" id="divMemberPack" style="display: none;">
+                            <div class="col-md-12">
+                                <div class="ExtraDisCounT" id="divPackageDetail">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="divPackage" style="display: none;">
+                            <div class="col-md-12">
+                                <div class="ExtraDisCounT">
+                                    <p id="txtPackageDetail" style="font-size: 12px;"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="divSelectPackage" style="display: none;">
+                            <div class="col-md-12">
+                                <div class="ExtraDisCounT">
+                                    <span style="color: #f34686; font-weight: bold;">Select Package : </span>
+                                    <select name="ddl_package" id="ddl_package">
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12 ProCeed_Btn">
+                                <button type="button" id="btnProcced" class="btn" onclick="return onclickbtnprocced();">Proceed to Book <i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 Boo_Ki_ng" style="padding: 0px;" id="divEmptyCart">
+                    <h4>Booking Summary</h4>
+                    <div class="BooKingSummary1">
+                        <div class="CartEmpTy">
+                            <p>Your cart is Empty</p>
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section Start -->
+
+        <section id="connected">
+            <div class="container">
+                <div class="row" style="padding-bottom:20px;">
+                    <div class="connected-wrapper">
+                        <div class="col-md-2 col-sm-2">
+                            <div class="contact-item">
+                                <h4>Information</h4>
+                                <ul>
+                                    <li><a href="https://www.lifeasy.in/privacy" target="_blank">Privacy Policy</a></li>
+                                    <li><a href="https://www.lifeasy.in/refund-policy" target="_blank">Refund Policy</a></li>
+                                    <li><a href="https://www.lifeasy.in/terms-conditions" target="_blank">Terms and Conditions</a></li>
+                                    <li><a href="https://www.lifeasy.in/career" target="_blank">Career</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="contact-item">
+                                <h4>&nbsp;</h4>
+                                <ul>
+
+                                    <li>
+                                        <a href="https://www.lifeasy.in/blog/"></a>
+                                    </li>
+                                    <li><a href="https://www.lifeasy.in/refer-earn" target="_blank">Refer &amp; Earn </a></li>
+                                    <li><a href="https://www.lifeasy.in/faq.aspx">FAQ's</a></li>
+                                    <li><a href="https://www.lifeasy.in/coupon.aspx">Coupon Partner</a></li>
+                                    <li><a href="https://www.lifeasy.in/contact.aspx">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="contact-item">
+                                <h4>&nbsp;</h4>
+                                <ul>
+                                    <li><a href="https://www.lifeasy.in/Gift.aspx">Corporate Gifting</a></li>
+                                    <li><a href="https://www.lifeasy.in/modular-kitchen">Modular Kitchen</a></li>
+                                    <li><a href="https://www.lifeasy.in/commercial-ac-repair">Commercial AC Repair</a></li>
+                                    <li><a href="https://www.lifeasy.in/home-painting">Home Painting Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="contact-item">
+                                <h4>Cities</h4>
+                                <ul>
+                                    <li><a href="https://www.lifeasy.in/City/Noida">Noida</a></li>
+                                    <li><a href="https://www.lifeasy.in/City/Ghaziabad">Ghaziabad</a></li>
+                                    <li><a href="https://www.lifeasy.in/City/Delhi">Delhi</a></li>
+                                    <li><a href="https://www.lifeasy.in/City/Faridabad">Faridabad</a></li>
+                                    <li><a href="https://www.lifeasy.in/City/Gurugram">Gurgaon</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="contact-item">
+                                <h4>download mobile app</h4>
+                                <p class="app">
+                                    <a href="https://play.google.com/store/apps/details?id=com.lifeasy.app.lifeasy&amp;hl=en" rel="nofollow">
+                                        <img src="AC%20Service_files/playstore.png" class="img-responsive" alt="google play store" width="100" height=" ">
+                                    </a>
+                                    <a href="https://itunes.apple.com/us/app/lifeasy/id1147946301?mt=8" rel="nofollow">
+                                        <img src="AC%20Service_files/app-store.png" class="img-responsive" alt="apple app store" width="100" height=" ">
+                                    </a>
+                                </p>
+                                <h4>Follow US</h4>
+                                <p class="social">
+                                    <a class="icon-facebook" href="https://www.facebook.com/lifeasy.in" rel="nofollow"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+                                    <a class="icon-twitter" href="https://twitter.com/lifeasyin" rel="nofollow"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+                                    <a class="icon-linkedin" href="https://in.linkedin.com/company/lifeasy-on-demand-home-services" rel="nofollow"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                    <a class="icon-pinterest" href="https://in.pinterest.com/lifeasyin/" rel="nofollow"><i aria-hidden="true" class="fa fa-pinterest"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="FooterServiceData">
+            <section class="footer-snd-blk">
+                <div class="container">
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/ac-repair" style="color:#fff">AC Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=RA7azl9wfHE=&amp;subid=njoJdE5hgXc=">Normal Inspection/Visiting Charge</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=RA7azl9wfHE=&amp;subid=doj62/5jaHY=">AC Servicing</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=RA7azl9wfHE=&amp;subid=5Mr7nM8/FSo=">AC Installation/Removal</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=RA7azl9wfHE=&amp;subid=J5yVLRJNV9E=">Complete Gas Charging</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=RA7azl9wfHE=&amp;subid=fQbfHW9j+ck=">AC AMC</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=RA7azl9wfHE=&amp;subid=MtekubZwzvM=">Minor Repair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/home-cleaning" style="color:#fff">Home Cleaning Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=K/ITrpbw95A=&amp;subid=9BINv6v0vlQ=">Regular Deep Spa</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=K/ITrpbw95A=&amp;subid=PlV5j/NdsuE=">Premium Steam Spa</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=K/ITrpbw95A=&amp;subid=qLeTyELyEV8=">Kitchen Deep Spa (Without Chimney)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=K/ITrpbw95A=&amp;subid=1QjbcsLUDLs=">Regular Bathroom Spa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/led-tv-installation" style="color:#fff">LED TV Installation </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=+nKCja/8zhQ=&amp;subid=jV4aHDhps3g=">Standard Inspection / Visit</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=+nKCja/8zhQ=&amp;subid=/s3RPlLgt6M=">LED TV Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=+nKCja/8zhQ=&amp;subid=nejxVzFlISc=">LED TV Installation with Stand</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=+nKCja/8zhQ=&amp;subid=hzkBi2GxLx8=">LED TV Un-installation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/refrigerator-repair" style="color:#fff">Refrigerator Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=hwb/fsyIt/E=&amp;subid=Y38N9js2xm4=">Standard Inspection / Visit</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=hwb/fsyIt/E=&amp;subid=Y/6ve1dBT58=">General Service</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=hwb/fsyIt/E=&amp;subid=YXyPEZnA6MI=">Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=hwb/fsyIt/E=&amp;subid=IU74S6V6kUk=">Gas Refill</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=hwb/fsyIt/E=&amp;subid=udrWAie9N4g=">Compressor Replacement</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/washing-machine-repair" style="color:#fff">Washing Machine Repair </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=OcYKYduW5Ss=&amp;subid=jz6zBRdhQ3Q=">Standard Inspection / Visit</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=OcYKYduW5Ss=&amp;subid=b+yNOLQ5uyM=">General Service</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=OcYKYduW5Ss=&amp;subid=d0IzTDxJ7XU=">General Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=OcYKYduW5Ss=&amp;subid=Y0Qu1l0ZnQ8=">PCB Repair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/microwave-oven-repair" style="color:#fff">Microwave Oven Repair </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=y2DxQw6okYc=&amp;subid=6i6w0jr+U1Q=">Standard Inspection / Visit</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=y2DxQw6okYc=&amp;subid=nq3FG6cwgrM=">Minor Repair</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=y2DxQw6okYc=&amp;subid=j5LgiYc3JPU=">PCB Repair</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=y2DxQw6okYc=&amp;subid=juhr+PNCHoA=">Parts Replacement Charges</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/geyser-repair-and-service" style="color:#fff">Geyser Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=epBKTHG0e4s=&amp;subid=xjaOKdEA1YI=">Normal Visiting Charges</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=epBKTHG0e4s=&amp;subid=uafMBOUPGYw=">Geyser Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=epBKTHG0e4s=&amp;subid=AQl29btYkkY=">Geyser Un-installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=epBKTHG0e4s=&amp;subid=XvVAkPMqqDo=">General Service</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=epBKTHG0e4s=&amp;subid=Ute93rYer+Y=">Parts Replacement Charges</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/water-purifier-ro" style="color:#fff">RO Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=Q34o2xbp/XA=&amp;subid=n9hTtAuNcmE=">Normal Visiting Charge</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=Q34o2xbp/XA=&amp;subid=TvkgMx+UjeE=">RO - Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=Q34o2xbp/XA=&amp;subid=7/5MuIZ08lw=">RO - Servicing ( One Time)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=Q34o2xbp/XA=&amp;subid=NEFfrObJdBk=">Minor Repair</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=Q34o2xbp/XA=&amp;subid=XNLcWCz385E=">RO - Uninstallation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/it-repair" style="color:#fff">IT Repair </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=gBTBussUCVI=&amp;subid=O9z2njYFPJY=">Networking</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=gBTBussUCVI=&amp;subid=9lFmhdti8js=">Hardware</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=gBTBussUCVI=&amp;subid=zJLTIIzCWDs=">Software</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=gBTBussUCVI=&amp;subid=EJKzHSraaCQ=">Normal Visiting Charge</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/electrical" style="color:#fff">Electrical Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=A4pOctsQhv4=">Normal Visiting Charges</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=igkrs3Cj8/M=">Fans</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=hNfp+Qfl6n8=">Inverters</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=sm0JqcSvT6k=">Door Bell Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=+fu1MS3FjGQ=">Stabilizer Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=hO+hlbKkPv4=">Switches</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=nDc8LMSYktE=">Lights</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=NlNyvkGUpoc=">Drilling</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=JsD/ESQArzE=">Wiring</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=/g3dU8iKPSI=&amp;subid=KeQyFFHRg4w=">Minor Work</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/plumber" style="color:#fff">Plumber Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=9Bg0YBHtzuc=">Normal Visiting Charge</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=uWVbupegbck=">Minor Repair</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=hrFa4/uB/OM=">Shower</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=kIr7vnj+QDA=">Taps</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=OLGK+/Q4p28=">Kitchen Fittings</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=8W6IV4Uo6BY=">Water Pump Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=D9PL4yCv228=&amp;subid=w2Ba4fvlBzs=">Water Tank Installation / Removal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/carpenter" style="color:#fff">Carpenter Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=vHryT2lseC4=">Normal Visiting Charge</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=F/BPQJIDHK4=">Lock</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=wwgW2nhoT6k=">Door</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=lrbA7pyQ2ME=">Door Accessories</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=sHBgWwq7S0o=">Table Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=AIE6oRkF+Sw=">Shoe Racks Installation</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=S8ZYMn05xQo=">Dining Tables</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=9+2aQ6ohk+A=&amp;subid=NxV6J8e0rFw=">Window</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/sofa-cleaning" style="color:#fff">Sofa &amp; Carpet Cleaning </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=t14cNPQcnmY=&amp;subid=WX/bCo8t7iU=">Fabric Sofa Cleaning</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=t14cNPQcnmY=&amp;subid=axIwH0dXcPQ=">Leather Sofa Cleaning</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=t14cNPQcnmY=&amp;subid=1GJkJ36xl8I=">Sofa Cushion Cleaning</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=t14cNPQcnmY=&amp;subid=vaATDJ48NIk=">Chair Cleaning</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=t14cNPQcnmY=&amp;subid=u8zH+qePnE0=">Carpet Cleaning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/home-painting" style="color:#fff">Home Painting Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=AHaTMPrTIHw=&amp;subid=VlBfQ0hQ1XU=">Free Visit for Estimates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/pest-control" style="color:#fff">Pest Control </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=1wOt9Yejvqs=">Normal Visiting Charge</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=ZCY45hx8qIo=">General Pest Control(Annual Service)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=0naBI4FcLBc=">Anti Termite Service (Deemak)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=dRydUdw9YD8=">Anti Bed bug Service (Khatmal)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=/p9s/cZyUtY=">Ant Control (Annual Service)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=AX6TS3WKyuE=">Cockroach Control (Annual Service)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=6VOnelgfA7I=">Mosquito Control (One Time)</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=B35Kzg3iEkw=&amp;subid=5QTZV6LlmDg=">Rat Control (One Time)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/beauty-service" style="color:#fff">Beauty Service </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=PomNrBGvzLo=">Regular Waxing</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=kjd2w8fq36E=">Manicure &amp; Pedicure</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=2XQQ4g2NDZI=">Massage</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=zBOeyECeJ2I=">Hair</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=6tJ8YtKcijs=">Threading</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=GzuIjcO80X0=">Facial</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=IZ6+YSGgEPE=">Bleach</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=m2XgMewL82Q=">Makeup</a><span>| </span></li>
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=xBeKGpMQTaw=&amp;subid=JsG0vvc2d5g=">Packages</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:0px">
+                        <div class="col-md-2 subHead"><a href="https://www.lifeasy.in/service/movers-and-packers" style="color:#fff">Movers &amp; Packer </a></div>
+                        <div class="col-md-10">
+                            <ul class="catalog-foot marginMuted">
+                                <li><a href="https://www.lifeasy.in/ServiceBooking.aspx?msid=6uO8O8mF9u4=&amp;subid=QLm+M/83tj8=">Normal Visiting Charges</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright text-left">
+                    <p> © Lifeasy 2016. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- [ Modal Service Date & Time ] -->
+        <div class="modal fade" id="divmodalservtime" tabindex="-1" style="display: none;">
+            <div class="modal-dialog modal-lg Time_PopUp">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 2;color: white;">
+                            <span aria-hidden="true" style="font-size: 25px;">×</span></button>
+                        <h4 class="modal-title caps" style="text-align: center;"><strong>SELECT DATE AND TIME OF SERVICE</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="divweakdt11">
+                            <section class="regular slider slick-initialized slick-slider">
+                                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+                                <div class="slick-list draggable">
+                                    <div class="slick-track" style="opacity: 1; width: 2919px; transform: translate3d(-695px, 0px, 0px);">
+                                        <div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(3,"15/01/2020")' tabindex="-1">Wed<br><label> 15</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(4,"16/01/2020")' tabindex="-1">Thu<br><label> 16</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(5,"17/01/2020")' tabindex="-1">Fri<br><label> 17</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(6,"18/01/2020")' tabindex="-1">Sat<br><label> 18</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(7,"19/01/2020")' tabindex="-1">Sun<br><label> 19</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 139px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt0" class="selected"><a href="javascript:void(0);" onclick='callshiftdata(0,"12/01/2020")' tabindex="0">Today<br><label> 12</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 139px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt1"><a href="javascript:void(0);" onclick='callshiftdata(1,"13/01/2020")' tabindex="0">Tomorrow<br><label> 13</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 139px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt2"><a href="javascript:void(0);" onclick='callshiftdata(2,"14/01/2020")' tabindex="0">Tue<br><label> 14</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 139px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt3"><a href="javascript:void(0);" onclick='callshiftdata(3,"15/01/2020")' tabindex="0">Wed<br><label> 15</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 139px;">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt4"><a href="javascript:void(0);" onclick='callshiftdata(4,"16/01/2020")' tabindex="0">Thu<br><label> 16</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt5"><a href="javascript:void(0);" onclick='callshiftdata(5,"17/01/2020")' tabindex="-1">Fri<br><label> 17</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt6"><a href="javascript:void(0);" onclick='callshiftdata(6,"18/01/2020")' tabindex="-1">Sat<br><label> 18</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="SliderBox_Cls1" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id="dt7"><a href="javascript:void(0);" onclick='callshiftdata(7,"19/01/2020")' tabindex="-1">Sun<br><label> 19</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(0,"12/01/2020")' tabindex="-1">Today<br><label> 12</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(1,"13/01/2020")' tabindex="-1">Tomorrow<br><label> 13</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(2,"14/01/2020")' tabindex="-1">Tue<br><label> 14</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(3,"15/01/2020")' tabindex="-1">Wed<br><label> 15</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(4,"16/01/2020")' tabindex="-1">Thu<br><label> 16</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(5,"17/01/2020")' tabindex="-1">Fri<br><label> 17</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(6,"18/01/2020")' tabindex="-1">Sat<br><label> 18</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 139px;" tabindex="-1">
+                                            <div>
+                                                <div id="" style="width: 100%; display: inline-block;">
+                                                    <ul class="SliderBox_Cls">
+                                                        <li id=""><a href="javascript:void(0);" onclick='callshiftdata(7,"19/01/2020")' tabindex="-1">Sun<br><label> 19</label></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+                            </section>
+                        </div>
+                        <div id="exTab1" class="">
+                            <div id="divsltsift">
+                                <ul class="nav nav-pills">
+                                    <li id="li0" class="active"><a data-toggle="tab" id="lst0" href="javascript:void(0);" onclick="showhie(0)">Afternoon</a></li>
+                                    <li id="li1" style="margin-right:0px;"><a data-toggle="tab" id="lst1" href="javascript:void(0);" onclick="showhie(1)">Evening</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content clearfix">
+                                <div id="divtmesltsft">
+                                    <div id="Morning0" class="tab-pane active TimeWith_Tabs">
+                                        <ul id="TimeNo">
+                                            <li id="tm0n0"><a href="javascript:void(0);" onclick='GetSerTime(0,0,1,"15:00 PM-15:30 PM" );'>15:00 PM-15:30 PM</a></li>
+                                            <li id="tm0n1"><a href="javascript:void(0);" onclick='GetSerTime(0,1,2,"15:30 PM-16:00 PM" );'>15:30 PM-16:00 PM</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="Morning1" class="tab-pane TimeWith_Tabs" style="display:none;">
+                                        <ul id="TimeNo">
+                                            <li id="tm1n0"><a href="javascript:void(0);" onclick='GetSerTime(1,0,1,"16:00 PM-16:30 PM" );'>16:00 PM-16:30 PM</a></li>
+                                            <li id="tm1n1"><a href="javascript:void(0);" onclick='GetSerTime(1,1,2,"16:30 PM-17:00 PM" );'>16:30 PM-17:00 PM</a></li>
+                                            <li id="tm1n2"><a href="javascript:void(0);" onclick='GetSerTime(1,2,3,"17:00 PM-17:30 PM" );'>17:00 PM-17:30 PM</a></li>
+                                            <li id="tm1n3"><a href="javascript:void(0);" onclick='GetSerTime(1,3,4,"17:30 PM-18:00 PM" );'>17:30 PM-18:00 PM</a></li>
+                                            <li id="tm1n4"><a href="javascript:void(0);" onclick='GetSerTime(1,4,5,"18:00 PM-18:30 PM" );'>18:00 PM-18:30 PM</a></li>
+                                            <li id="tm1n5"><a href="javascript:void(0);" onclick='GetSerTime(1,5,6,"18:30 PM-19:00 PM" );'>18:30 PM-19:00 PM</a></li>
+                                            <li id="tm1n6"><a href="javascript:void(0);" onclick='GetSerTime(1,6,7,"19:00 PM-19:30 PM" );'>19:00 PM-19:30 PM</a></li>
+                                            <li id="tm1n7"><a href="javascript:void(0);" onclick='GetSerTime(1,7,8,"19:30 PM-20:00 PM" );'>19:30 PM-20:00 PM</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="color: red; display: none; width: 100%; text-align: center; font-size: 17px;" id="divDateError">Please Select the Date and Time of Service</div>
+                        <button type="button" class="btn VeRiFyBtn" style="float: right;" onclick="return SetServiceDateTime();" id="btnSelectDate">Submit</button>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- [ Modal #1 ] -->
+        <div class="modal fade" id="divmodallogin" tabindex="-1">
+            <div class="modal-dialog modal-sm First_PopUp">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title caps" style="text-align: center;"><strong>You're almost there</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input name="txt_umobile" type="text" id="txt_umobile" class="form-control" placeholder="Enter Mobile Number" return="false" onkeypress="return isNumber();" maxlength="10" autocomplete="off">
+                        </div>
+                        <div class="form-group divcheckotp">
+                            <input name="txt_otp" type="text" id="txt_otp" class="form-control" placeholder="Enter OTP" maxlength="6" autocomplete="off" onkeypress="return isNumber();">
+                        </div>
+                        <div id="errorlog" style="color: red; text-align: center;"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="divcheckotp">
+                            <a href="javascript:void(0);" onclick="return Logvalidation1();" id="div_resent" class="ReSendOtp" style="text-decoration: none;">Resend OTP</a>
+                        </div>
+                        <div class="divcheckotp">
+
+                            <input type="submit" name="btnSubmit" value="Verify" onclick="return checkotp();" id="btnSubmit" class="btn VeRiFyBtn">
+                        </div>
+
+                        <div class="divotp">
+                            <button type="button" class="btn VeRiFyBtn" onclick="return Logvalidation1();" id="btn_otp">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- [ Modal #2 ] -->
+        <div class="modal fade" id="divmodalsigngup" tabindex="-1">
+            <div class="modal-dialog SignUpPup-Up">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title caps"><strong>Welcome to the Lifeasy Family.<br>
+                            Please fill the Details to book your order !</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_name" type="text" id="txt_name" class="form-control" placeholder="Enter Full Name" oninput="return checkMailStatus1(0);" onkeypress="return clickButton(event, 'btnregister')" maxlength="50" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_email" type="email" id="txt_email" class="form-control" placeholder="Enter email " oninput="return checkMailStatus1(0);" onkeypress="return clickButton(event, 'btnregister')" maxlength="100" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_mobile" type="text" id="txt_mobile" class="form-control" placeholder="Mobile No. " onkeypress="return clickButton_mob(event, 'btnregister')" oninput="return checkMailStatus1(0);" maxlength="10" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_altmob" type="text" id="txt_altmob" class="form-control" placeholder=" Alternate Mobile No. " onkeypress="return clickButton(event, 'btnregister')" oninput="return checkMailStatus1(0);" maxlength="10" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_passreg" type="password" id="txt_passreg" class="form-control" placeholder="Password" onkeypress="return clickButton(event, 'btnregister')" oninput="return checkMailStatus1(0);" maxlength="20">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_confpass" type="password" id="txt_confpass" class="form-control" placeholder="Confirm Password" onkeypress="return clickButton(event, 'btnregister')" oninput="return checkMailStatus1(0);" maxlength="20">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-6">
+                                <div class="form-group GenderType">
+                                    <input type="text" class="form-control" placeholder=" Gender : ">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" id="rdmale" checked="checked">Male</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" id="rdfemale">Female</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_address" type="text" id="txt_address" class="form-control" placeholder="Flat/House No " oninput="return checkMailStatus1(0);" onkeypress="return clickButton(event, 'btnregister')" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_servicelocation" type="text" id="txt_servicelocation" class="form-control" placeholder="Enter Service Area" oninput="return checkMailStatus1(0);" onkeypress="return clickButton(event, 'btnregister')" autocomplete="off">
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_pincode" type="text" id="txt_pincode" class="form-control" placeholder="Pincode" oninput="return checkMailStatus1(0);" onkeypress="return clickButton(event, 'btnregister')" onchange="return checkPinCode();" maxlength="6" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txtcity" type="text" id="txtcity" class="form-control" placeholder="City" maxlength="80" onkeypress="return clickButton(event, 'btnregister')" oninput="return checkMailStatus1(0);" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="txt_state" type="text" id="txt_state" class="form-control" placeholder="State" onkeypress="return clickButton(event, 'btnregister')" onchange="return checkMailStatus1(0); checkPinCode();" maxlength="60" readonly="readonly">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-12">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="termsconditions" type="checkbox" id="termsconditions"> By signing up, I agree to Lifeasy’s <a href="https://www.lifeasy.in/terms-conditions.aspx">Terms &amp; Conditions</a>, <a href="https://www.lifeasy.in/terms-conditions.aspx">Payments Terms of Service</a>, <a href="https://www.lifeasy.in/privacy.aspx">Privacy Policy</a>, <a href="https://www.lifeasy.in/refund-policy.aspx">Refund/ Cancellation Policy</a>. I also give consent to receive promotional mails and offers.
+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="errorregister" style="color: red; text-align: center;"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn VeRiFyBtn" id="btnregister" onclick="return  checkMailStatus(1); ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="AC%20Service_files/bootstrap.js" type="text/javascript"></script>
+        <script type="text/javascript" src="AC%20Service_files/BookingOrder.js"></script>
+        <script src="AC%20Service_files/Coupon.js" type="text/javascript"></script>
+        <script src="AC%20Service_files/Login.js" type="text/javascript"></script>
+        <script src="AC%20Service_files/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script src="AC%20Service_files/Booking.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="AC%20Service_files/platform.js" async="" defer="defer" gapi_processed="true"></script>
+
+        <input type="hidden" id="hdnSelectDateTimeID" name="hdnSelectDateTimeID" value="5">
+        <input name="txt_lclstrg" type="hidden" id="txt_lclstrg" value="xbq44wp505wcjxtidw4obqlo646">
+        <input type="hidden" id="txt_custid" name="txt_custid" value="">
+        <input type="hidden" id="txt_date" name="txt_date" value="12/01/2020">
+        <input type="hidden" id="txt_slttime" name="txt_slttime" value="">
+        <input type="hidden" id="txt_itmlstid" name="txt_itmlstid" value="">
+        <input name="hdnSubId" type="hidden" id="hdnSubId" value="30469">
+        <input name="hdnInclId" type="hidden" id="hdnInclId" value="31562_31569_31570_31571_31577_31579">
+        <input name="hdnMainId" type="hidden" id="hdnMainId" value="49">
+        <input type="hidden" id="hdnServiceCharge" name="hdnServiceCharge" value="750_2999_1750_3000_750_1200">
+        <input type="hidden" id="txt_fnlitm" name="txt_fnlitm">
+        <input type="hidden" id="txt_fnlval" name="txt_fnlval">
+        <input name="hdnuserlocalstrage" type="hidden" id="hdnuserlocalstrage" value="xbq44wp505wcjxtidw4obqlo646">
+        <input name="hdntotalamount" type="hidden" id="hdntotalamount">
+        <input name="hdncityname" type="hidden" id="hdncityname">
+        <input name="hdnfinalamount" type="hidden" id="hdnfinalamount">
+        <input name="hdncouponcodeid" type="hidden" id="hdncouponcodeid">
+        <input name="hdncouponcodeamount" type="hidden" id="hdncouponcodeamount" value="0">
+        <input name="hdnpayableamount" type="hidden" id="hdnpayableamount" value="0">
+        <input name="hdnDiscountAmount" type="hidden" id="hdnDiscountAmount" value="0">
+        <input name="hdnPackageName" type="hidden" id="hdnPackageName" value="0">
+        <input name="hdnPackageType" type="hidden" id="hdnPackageType" value="0">
+        <input name="hdnPackageID" type="hidden" id="hdnPackageID" value="0">
+        <input name="hdnspecialdiscount" type="hidden" id="hdnspecialdiscount" value="0">
+        <input type="hidden" name="hdn_lat" id="hdn_lat">
+        <input type="hidden" name="hdn_long" id="hdn_long">
+        <input type="hidden" name="hdn_servicepincode" id="hdn_servicepincode">
+        <input type="hidden" name="hdn_serviceaddress" id="hdn_serviceaddress">
+        <input type="hidden" id="hdnmo" name="seenval">
+        <input type="hidden" id="hdn_unverifiedCust" name="hdn_unverifiedCust">
+        <input name="hdnSpclDiscCartid" type="hidden" id="hdnSpclDiscCartid">
+        <input name="hdn_PackageCount" type="hidden" id="hdn_PackageCount" value="0">
+        <input name="hdnOfferDiscAmt" type="hidden" id="hdnOfferDiscAmt" value="0">
+    </form>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4BBNKV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="AC%20Service_files/Location.js" type="text/javascript"></script>
+    <script src="AC%20Service_files/js" async="" defer="defer"></script>
+
+    <div class="pac-container pac-logo hdpi" style="display: none;"></div>
+    <script src="AC%20Service_files/21c1e810f7f98f00b3.js"></script>
+</body>
+
+</html>
